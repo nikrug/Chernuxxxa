@@ -1,9 +1,12 @@
+from _operator import index
 
+from django.contrib import admin
 from django.urls import path
-from .views import *
+from . import views
+from django.urls import path, include
 
 
 urlpatterns = [
-    path('', index),
-    
+  path('', views.rick),
+  path('/rick',views.rick)
     ]
